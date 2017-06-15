@@ -7,6 +7,7 @@ RUN mkdir /var/log/php-fpm/
 RUN apt-get update && apt-get install -y \
 	libmcrypt-dev  \
 	libicu-dev \
+	libpng-dev \
 	mysql-client \
 	&& docker-php-ext-install pdo_mysql \
 	&& docker-php-ext-install iconv \
